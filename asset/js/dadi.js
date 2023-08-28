@@ -4,8 +4,8 @@ Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. St
 */
 
 //genero due numeri casuali da 1 a 6, uno dell'utente,uno del computer
-userNumber = Math.floor(Math.random() * 6) + 1;
-computerNumber = Math.floor(Math.random() * 6) + 1;
+const userNumber = Math.floor(Math.random() * 6) + 1;
+const computerNumber = Math.floor(Math.random() * 6) + 1;
 
 //metti i due numeri a confronto e stabilisco il vincitore
 if (userNumber > computerNumber) {
@@ -15,9 +15,3 @@ if (userNumber > computerNumber) {
 } else{
     document.getElementById('numberChoose').innerHTML = 'il numero del giocatore era:' + userNumber + ' ' + 'il numero del computer era:' + computerNumber + '--->' + 'quindi è pareggio!';
 }
-
-
-/*
-Mail
-Chiedi all'utente la sua email, controlla che sia nella lista di chi può accedere, stampa un messaggio appropriato sull’esito del controllo.
-*/
